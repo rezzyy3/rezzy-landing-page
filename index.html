@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rezzy3 - Impulsione Seu Instagram</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="video-container">
+            <iframe id="video" src="https://www.youtube.com/embed/D_0d2kY7lP4?autoplay=1&mute=1&loop=1&playlist=D_0d2kY7lP4" frameborder="0" allowfullscreen></iframe>
+            <button id="toggle-sound">🔊 Ativar Som</button>
+        </div>
+        <h1>🔥 Rezzy3 - Impulsione Seu Instagram 🔥</h1>
+    </header>
+    <section class="planos">
+        <h2>🔥 Planos e Benefícios 🔥</h2>
+        <table>
+            <tr>
+                <th>📦 Pacote</th>
+                <th>🎁 Benefícios</th>
+                <th>💰 Preço</th>
+            </tr>
+            <tr>
+                <td>Iniciante</td>
+                <td>Acesso básico + suporte</td>
+                <td><a href="https://wa.me/message/G373TKHVZV7EK1">R$ 49,90</a></td>
+            </tr>
+            <tr>
+                <td>Avançado</td>
+                <td>Suporte VIP + aulas extras</td>
+                <td><a href="https://wa.me/message/G373TKHVZV7EK1">R$ 99,90</a></td>
+            </tr>
+            <tr>
+                <td>Premium</td>
+                <td>Todos os benefícios + call semanal</td>
+                <td><a href="https://wa.me/message/G373TKHVZV7EK1">R$ 149,90</a></td>
+            </tr>
+        </table>
+    </section>
+    <footer>
+        <a href="https://youtube.com/@rezzyyy3?si=dy2MswfGT8Tkyb-4" target="_blank" class="btn youtube">YouTube</a>
+        <a href="https://www.instagram.com/_rezzy3/" target="_blank" class="btn instagram">Instagram</a>
+        <a href="https://wa.me/message/G373TKHVZV7EK1" target="_blank" class="btn whatsapp">WhatsApp</a>
+    </footer>
+    <script>
+        document.getElementById("toggle-sound").addEventListener("click", function() {
+            let video = document.getElementById("video");
+            let src = video.src;
+            if (src.includes("mute=1")) {
+                video.src = src.replace("mute=1", "mute=0");
+            } else {
+                video.src = src.replace("mute=0", "mute=1");
+            }
+        });
+    </script>
+</body>
+</html>
